@@ -1,6 +1,6 @@
 <div class="face-snap-card" [ngClass]="{snapped : buttonText === 'Oops, unSnap!'}">
   <h2>{{ faceSnap.title.toString() | titlecase }}</h2>
+  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" style="margin-top: 20px"/>
   <p>{{ faceSnap.description }}</p>
-  <button (click)="onViewFaceSnap()">VIEW</button>
-
+  <button (click)="onViewFaceSnap()" style="background-color: peachpuff">VIEW</button>
 </div>
